@@ -1,0 +1,69 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(0deg, #d6d3c5 2.38%, #f1f0ea 2.38%, #f1f0ea 50%, #d6d3c5 50%, #d6d3c5 52.38%, #f1f0ea 52.38%, #f1f0ea 100%);
+    background-size: 42.00px 42.00px;
+}
+
+.description-cont {
+    background: #D8CBA6;
+}
+
+.title, .text, footer {
+    color: #534B52;
+}
+
+nav {
+    background: #707070;
+}
+
+li {
+    color: #D6D3C5;
+}
+
+.active, .no-active:hover, .active:focus, .no-active:focus {
+    color: #707070;
+    background: #F1F0EA;
+    border-radius: 10px;
+}
+
+.btn-add {  
+    background: #3498DB;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid #534B52;
+}
+
+.card-header {
+    background: #F54F42;
+}
+
+.date-cont, .task-description {
+    color: #534B52;
+}
+
+.priority {
+    color: #8F0A00;
+}
+
+.line {
+    height: 1px;
+    background-color: #534B52;
+}
+
+.task-category {
+    color: #6B6B6B;
+}
+
+.copyright {
+    color: #D6D3C5;
+}
+
+foote {
+    position: absolute;
+    bottom: 0;
+}
