@@ -33,6 +33,18 @@ li {
     background: #3498DB;
 }
 
+.btn-add:hover {
+    background: #2980B9;
+}
+
+.btn-add-modal {
+    background: #3498DB;
+}
+
+.btn-add-modal:hover {
+    background: #2980B9;
+}
+
 .card {
     overflow: hidden;
     border: 1px solid #534B52;
@@ -63,7 +75,27 @@ li {
     color: #D6D3C5;
 }
 
-foote {
-    position: absolute;
-    bottom: 0;
+.modal-title, label {
+    color: #534B52;
+}
+
+@media screen and (min-width: 940px) and (max-width: 1023px) {
+    .title, .text {
+        margin-left: 20px;
+    }
+    main {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1190px) and (max-width: 1279px) {
+    .title, .text, main {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .title, .text, main {
+        padding-left: 30px;
+    }
 }
