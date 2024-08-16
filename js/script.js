@@ -37,13 +37,31 @@ function displayTasks() {
     tasks.forEach(task => {
         const taskElement = document.createElement('div');
         taskElement.className = 'card bg-white rounded-xl max-w-sm w-full mt-6 md:mt-8';
+        
+        let priorityClass = '';
+        let headerClass = '';
+        switch (task.priority) {
+            case 'Baja':
+                priorityClass = 'priority-low';
+                headerClass = 'card-header-low';
+                break;
+            case 'Moderada':
+                priorityClass = 'priority-medium';
+                headerClass = 'card-header-medium';
+                break;
+            case 'Urgente':
+                priorityClass = 'priority';
+                headerClass = 'card-header';
+                break;
+        }
+        
         taskElement.innerHTML = `
-            <div class="card-header flex justify-between items-center px-5 py-2">
+            <div class="card-header flex justify-between items-center px-5 py-2 ${headerClass}">
               <div class="date-cont flex items-center">
                 <i class="bi-calendar-fill text-l"></i>
                 <p class="ml-2">${task.date}</p>
               </div>
-              <p class="priority font-semibold">${task.priority}</p>
+              <p class="priority font-semibold ${priorityClass}">${task.priority}</p>
             </div>
             <div class="line"></div>
             <div class="rounded-b-xl bg-rd-500 px-5 py-3">
@@ -55,5 +73,4 @@ function displayTasks() {
     });
 }
 
-// Mostrar las tareas almacenadas al cargar la página
 document.addEventListener('DOMContentLoaded', displayTasks);

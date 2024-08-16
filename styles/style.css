@@ -54,12 +54,28 @@ li {
     background: #F54F42;
 }
 
+.card-header-low {
+    background: #6FC866;
+}
+
+.card-header-medium {
+    background: #FEF17C;
+}
+
 .date-cont, .task-description {
     color: #534B52;
 }
 
 .priority {
     color: #8F0A00;
+}
+
+.priority-low {
+    color: #0D8B00;
+}
+
+.priority-medium {
+    color: #827500;
 }
 
 .line {
