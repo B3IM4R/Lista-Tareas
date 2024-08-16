@@ -11,7 +11,7 @@
       <title>Lista de Tareas</title>
   </head>
   <body>
-    <header class="lg:ml-56">
+    <header class="fixed top-0 w-full lg:ml-56">
         <div class="description-cont px-6 py-6 md:p-8 md:px-8 lg:px-6">
           <h1 class="title text-xl md:text-2xl font-semibold lg:mx-4">Tareas Pendientes</h1>
           <p class="text mt-1 lg:mx-4">Agrega tareas para planificar tu día</p>
@@ -42,9 +42,9 @@
     <div class="hidden lg:block fixed bottom-0 ml-1 lg:ml-5">
       <p class="copyright text-sm w-40 text-center lg:w-full mb-3">@ Beimar Mestizo Montaño</p>
     </div>
-    <main class="mx-6 md:ml-8 lg:ml-64 mt-6 md:mt-8 mb-32 md:mb-36 lg:mb-10">
+    <main class="mx-6 md:ml-8 lg:ml-64 mt-32 md:mt-40 mb-32 md:mb-36 lg:mb-10">
         <section class="pending-tasks">
-            <button class="btn-add rounded-full text-white text-lg py-3 px-5 lg:ml-2">+ Agregar Tarea</button>
+            <button class="btn-add rounded-full text-white text-lg py-3 px-5">+ Agregar Tarea</button>
             <div class="cards-content grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
         </section>
         <section class="tasks-list"></section>
